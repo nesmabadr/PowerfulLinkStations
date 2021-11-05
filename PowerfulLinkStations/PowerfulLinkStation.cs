@@ -13,6 +13,7 @@ namespace PowerfulLinkStations
 
             do
             {
+                // Reading and validating input format
                 Console.WriteLine("Please input the point coordinates in the following format: (x,y)");
                 pointCoordinates = Console.ReadLine();
 

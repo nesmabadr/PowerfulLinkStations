@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.298
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerfulLinkStations", "PowerfulLinkStations\PowerfulLinkStations.csproj", "{536D18F4-5F5B-4B8F-A1BD-906B80CEB3EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerfulLinkStations", "PowerfulLinkStations\PowerfulLinkStations.csproj", "{536D18F4-5F5B-4B8F-A1BD-906B80CEB3EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerfulLinkStations.Tests", "PowerfulLinkStations.Tests\PowerfulLinkStations.Tests.csproj", "{101C3ECD-2570-44BD-83AF-22665397668D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{536D18F4-5F5B-4B8F-A1BD-906B80CEB3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{536D18F4-5F5B-4B8F-A1BD-906B80CEB3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{536D18F4-5F5B-4B8F-A1BD-906B80CEB3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101C3ECD-2570-44BD-83AF-22665397668D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101C3ECD-2570-44BD-83AF-22665397668D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101C3ECD-2570-44BD-83AF-22665397668D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101C3ECD-2570-44BD-83AF-22665397668D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
