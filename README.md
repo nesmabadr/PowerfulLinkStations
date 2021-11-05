@@ -1,2 +1,2 @@
 # PowerfulLinkStations
-This solution aims to get the most powerful link station from a set of stations, according to a specific formula
+This solution aims to get the most powerful link station from a set of points, according to a specific formula
