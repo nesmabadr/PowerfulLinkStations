@@ -48,7 +48,7 @@ namespace PowerfulLinkStations
             }
             else
             {
-                Console.WriteLine($"“Best link station for point {inputPoint.X},{inputPoint.Y} is {powerAndLinkStation.Key.X},{powerAndLinkStation.Key.Y} with power {powerAndLinkStation.Value}");
+                Console.WriteLine($"Best link station for point {inputPoint.X},{inputPoint.Y} is {powerAndLinkStation.Key.X},{powerAndLinkStation.Key.Y} with power {powerAndLinkStation.Value}");
             }
         }
     }
