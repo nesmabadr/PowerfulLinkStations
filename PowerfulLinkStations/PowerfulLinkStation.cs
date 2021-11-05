@@ -17,7 +17,7 @@ namespace PowerfulLinkStations
                 Console.WriteLine("Please input the point coordinates in the following format: (x,y)");
                 pointCoordinates = Console.ReadLine();
 
-                if (!Regex.IsMatch(pointCoordinates, "\\(\\d+.*\\d*,\\d+.*\\d*\\)"))
+                if (!Regex.IsMatch(pointCoordinates, "\\(\\d+,\\d+\\)"))
                 {
                     Console.WriteLine($"The input point {pointCoordinates} is not in the correct format. Please make sure to have the point with the following format: (x,y)");
                     Console.WriteLine($"Do you want to enter a new value or exit the program? y or n");
