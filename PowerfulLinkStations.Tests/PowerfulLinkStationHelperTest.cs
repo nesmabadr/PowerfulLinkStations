@@ -1,11 +1,10 @@
-using System;
 using System.Collections.Generic;
 using System.Drawing;
 using Xunit;
 
 namespace PowerfulLinkStations.Tests
 {
-    public class PowerfulLinkStationTest
+    public class PowerfulLinkStationHelperTest
     {
         public static TheoryData CalculatePowerTestData()
         {
