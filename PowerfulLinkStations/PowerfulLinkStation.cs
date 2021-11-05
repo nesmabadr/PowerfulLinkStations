@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Text.RegularExpressions;
 
 namespace PowerfulLinkStations
@@ -35,8 +36,20 @@ namespace PowerfulLinkStations
 
             } while (retryInput);
 
-            float xCoordinate = float.Parse(pointCoordinates.Substring(1, pointCoordinates.IndexOf(',') - 1));
-            float yCoordinate = float.Parse(pointCoordinates.Substring(pointCoordinates.IndexOf(',') + 1, pointCoordinates.IndexOf(')') - pointCoordinates.IndexOf(',') - 1)); ;
+            var xCoordinate = int.Parse(pointCoordinates.Substring(1, pointCoordinates.IndexOf(',') - 1));
+            var yCoordinate = int.Parse(pointCoordinates.Substring(pointCoordinates.IndexOf(',') + 1, pointCoordinates.IndexOf(')') - pointCoordinates.IndexOf(',') - 1)); ;
+
+            var inputPoint = new Point(xCoordinate, yCoordinate);
+            var powerAndLinkStation = PowerfulLinkStationHelper.CalculatePower(inputPoint);
+
+            if (powerAndLinkStation.Value == 0)
+            {
+                Console.WriteLine($"No link station within reach for point {inputPoint.X},{inputPoint.Y}");
+            }
+            else
+            {
+                Console.WriteLine($"“Best link station for point {inputPoint.X},{inputPoint.Y} is {powerAndLinkStation.Key.X},{powerAndLinkStation.Key.Y} with power {powerAndLinkStation.Value}");
+            }
         }
     }
 }
